@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns="http://www.springframework.org/schema/security"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd 
+        http://www.springframework.org/schema/security 
+        http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+                        
+<!--<start id="in_memory_user_service"/>--> 
+    <user-service id="memberService">
+      <user name="murtadha" password="murtadha" 
+                     authorities="STUDENT,FACULTY"/>
+      <user name="student" password="student" 
+                     authorities="STUDENT"/>
+      <user name="admin" password="admin" 
+                     authorities="FACULTY"/>
+    </user-service>
+<!--<end id="in_memory_user_service"/>-->
+
+</beans:beans>

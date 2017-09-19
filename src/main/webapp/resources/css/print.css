@@ -1,0 +1,93 @@
+@CHARSET "UTF-8";
+body {
+    background-color:#FFFFFF;
+    margin:auto 0;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12.5px;
+    color:#000044;    
+}
+table{
+    width:100%;
+    margin: auto 0;
+    float: none;
+    border-collapse:collapse;
+    vertical-align:top;
+    border:2px solid #000000;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:100%;
+    color:#000;
+}
+
+table thead th{
+    color:#000000;
+    background-color:transparent;
+    border:1px solid #000000;
+    border-collapse:collapse;
+    text-align:center;
+    table-layout:auto;
+    vertical-align:middle;
+    padding:2px;
+}
+
+table tbody td{
+    vertical-align:bottom;
+    border-collapse:collapse;
+    border-left:1px solid #000000;
+    border-right:1px solid #000000;
+    border-bottom:1px solid #000000;
+    border-top:1px solid #000000;
+}
+
+table tbody tr td{
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-collapse:collapse;
+}
+
+.page-header, .req, .message, .noprint {
+   display: none;
+}
+
+.noborder{
+	border:none;
+	width: 20%;
+}
+.nobordersmall{
+	border:none;
+	width: 10%;
+}
+.noborderlarge{
+	border:none;
+	width: 75%;
+}
+.bordered{
+	margin-left: -30px;
+	margin-top: 7px;
+	margin-bottom: 3px;
+    border-bottom:1px solid #000000;  
+}
+.container{
+    width: 100%;
+    margin: auto;
+    float: none;
+    padding: 0;
+}
+
+.mycolor{
+	color: #0F4786;
+}
+
+@page {
+  size: A4;
+  margin: auto 25px auto 10px;
+  page: auto;
+}
+@media print {
+  html, body {
+     width: 210mm;
+     height: 297mm;
+     margin: auto 25px auto 10px;
+  }
+  
+}
